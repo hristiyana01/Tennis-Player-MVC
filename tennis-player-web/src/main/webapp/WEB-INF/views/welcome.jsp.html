@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Tennis Player DB</title>
+</head>
+<body>
+<p>Current Date: <%= currentDate %> </p>
+<p>Today is <%= currentDate.getDayOfWeek() %> </p>
+<h2>Welcome to the tennis player database!</h2>
+<h3>Player name: <i>?{name}</i> </h3>
+<form action="/player.do" method="POST">
+    <b>Player name:</b>
+    <input type="text" name="name"/>
+    <input type="Submit" value="Enter"/>
+</form>
+</body>
+</html>

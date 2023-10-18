@@ -1,3 +1,5 @@
+package io.datajek.springmvc;
+
 import io.datajek.springmvc.Player;
 import io.datajek.springmvc.PlayerService;
 

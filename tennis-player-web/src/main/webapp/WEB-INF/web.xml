@@ -21,4 +21,3 @@
     </servlet-mapping>
 
 </web-app>
-<context:component-scan base-package="io.datajek"/>

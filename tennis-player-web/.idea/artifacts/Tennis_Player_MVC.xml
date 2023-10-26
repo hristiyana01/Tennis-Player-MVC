@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Tennis-Player-MVC">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tennis_Player_MVC</output-path>
+    <root id="root" />
+  </artifact>
+</component>

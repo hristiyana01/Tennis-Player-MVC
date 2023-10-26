@@ -10,4 +10,9 @@ public class PlayerController {
     public String ShowForm() {
         return "search-player-form";
     }
+
+    @RequestMapping("/processPlayerForm")
+    public String processForm() {
+        return "player-detail";
+    }
 }

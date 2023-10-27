@@ -15,6 +15,5 @@
 <hr>
 
 <br><br>
-Player name: ${param.playerName}
-</body>
+Player name : ＄{name}</body>
 </html>

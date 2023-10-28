@@ -15,5 +15,7 @@
 <hr>
 
 <br><br>
-Player name : ＄{name}</body>
+Player name : ＄{name}
+
+</body>
 </html>

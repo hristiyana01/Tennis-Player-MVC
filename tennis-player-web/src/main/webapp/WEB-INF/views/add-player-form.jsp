@@ -18,7 +18,25 @@
 <form action = "processPlayerForm" modelAttribute="athlete">
     <br><br>
     Name: <form input path="lastName"></form>
-
+    <select name="playerCountry">
+        <option>Australia</option>
+        <option>France</option>
+        <option>Serbia</option>
+        <option>Switzerland</option>
+        <option>United States of America</option>
+    </select>
+   Country:  <formselect path="country">
+        <formoption value="AUT" label="Austria"/>
+        <formoption value="FRA" label="France"/>
+        <formoption value="SRB" label="Serbia"/>
+        <formoption value="SUI" label="Switzerland"/>
+        <formoption value="USA" label="United States of America"/>
+    </formselect>
+    Grand Slam Titles Won:
+    Australian Open <formcheckbox path="grandSlams" value="Australian Open"/>
+    French Open <formcheckbox path="grandSlams" value="French Open"/>
+    Wimbledon <formcheckbox path="grandSlams" value="Wimbledon"/>
+    US Open <formcheckbox path="grandSlams" value="US Open"/>
     <br><br>
     <input type="submit" value="Add Player"/>
 </form>

@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>Player Confirmation</title>
@@ -34,5 +35,6 @@ Grand Slam Titles :
     </c:forEach>
 </ul>
 <b>Current Rank</b> : ＄{athlete.rank}
+<b>Last Won</b> : <fmt:formatDate value="＄{athlete.lastWon}" type="date" pattern="dd-MM-YYYY"/>
 </body>
 </html>

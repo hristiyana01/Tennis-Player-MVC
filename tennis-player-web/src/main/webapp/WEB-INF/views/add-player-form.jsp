@@ -10,14 +10,32 @@
 <html>
 <head>
     <title>Add Player</title>
+    <style>
+        .error {
+            color:red;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
 <h2>Player Form</h2>
 <hr>
-
 <form action = "processPlayerForm" modelAttribute="athlete">
     <br><br>
-    Name: <form input path="lastName"></form>
+    <form action = "processPlayerForm" modelAttribute="athlete">
+        <br><br>
+        First Name: <form input path = "firstName"></form>
+        <br><br>
+        Last Name *: <form input path = "lastName"></form>
+        <form errors path= "lastName" cssClass="error"></form>
+        <!-- rest of the code -->
+<%--    </form>--%>
+<%--    Name: <form input path = "lastName"/>--%>
+<%--    <form errors path="lastName" cssClass="error"/>--%>
+        Current Rank *: <form input path = "rank"></form>
+        <form errors path= "rank" cssClass="error"></form>
+        Last Won (dd-mm-yyyy):<form input path="lastWon"></form>
+        <form errors path="lastWon" cssClass="error"></form>
     <select name="playerCountry">
         <option>Australia</option>
         <option>France</option>
@@ -26,20 +44,22 @@
         <option>United States of America</option>
     </select>
    Country:  <formselect path="country">
-        <formoption value="AUT" label="Austria"/>
-        <formoption value="FRA" label="France"/>
-        <formoption value="SRB" label="Serbia"/>
-        <formoption value="SUI" label="Switzerland"/>
-        <formoption value="USA" label="United States of America"/>
+        <formoption value="AUT" label="Austria"></formoption>
+        <formoption value="FRA" label="France"></formoption>
+        <formoption value="SRB" label="Serbia"></formoption>
+        <formoption value="SUI" label="Switzerland"></formoption>
+        <formoption value="USA" label="United States of America"></formoption>
     </formselect>
     Grand Slam Titles Won:
-    Australian Open <formcheckbox path="grandSlams" value="Australian Open"/>
-    French Open <formcheckbox path="grandSlams" value="French Open"/>
-    Wimbledon <formcheckbox path="grandSlams" value="Wimbledon"/>
-    US Open <formcheckbox path="grandSlams" value="US Open"/>
+    Australian Open <formcheckbox path="grandSlams" value="Australian Open"></formcheckbox>
+    French Open <formcheckbox path="grandSlams" value="French Open"></formcheckbox>
+    Wimbledon <formcheckbox path="grandSlams" value="Wimbledon"></formcheckbox>
+    US Open <formcheckbox path="grandSlams" value="US Open"></formcheckbox>
     <br><br>
+        Prize Money (USD):<form input path="prizeMoney" placeholder="＄#,###,###"></form>
+        <form errors path="prizeMoney" cssClass="error"></form>
+        <br><br>
     <input type="submit" value="Add Player"/>
 </form>
-
-  </body>
+</body>
 </html>

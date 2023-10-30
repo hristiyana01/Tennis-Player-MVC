@@ -20,7 +20,6 @@
 <body>
 <h2>Player Form</h2>
 <hr>
-
 <form action = "processPlayerForm" modelAttribute="athlete">
     <br><br>
     <form action = "processPlayerForm" modelAttribute="athlete">
@@ -57,8 +56,10 @@
     Wimbledon <formcheckbox path="grandSlams" value="Wimbledon"></formcheckbox>
     US Open <formcheckbox path="grandSlams" value="US Open"></formcheckbox>
     <br><br>
+        Prize Money (USD):<form input path="prizeMoney" placeholder="＄#,###,###"></form>
+        <form errors path="prizeMoney" cssClass="error"></form>
+        <br><br>
     <input type="submit" value="Add Player"/>
 </form>
-
 </body>
 </html>

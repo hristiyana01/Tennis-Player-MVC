@@ -36,5 +36,6 @@ Grand Slam Titles :
 </ul>
 <b>Current Rank</b> : ＄{athlete.rank}
 <b>Last Won</b> : <fmt:formatDate value="＄{athlete.lastWon}" type="date" pattern="dd-MM-YYYY"/>
+<b>Prize Money</b> : ＄{athlete.prizeMoney}
 </body>
 </html>

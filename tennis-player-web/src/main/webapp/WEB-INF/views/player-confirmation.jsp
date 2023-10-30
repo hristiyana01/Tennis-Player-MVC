@@ -33,6 +33,6 @@ Grand Slam Titles :
         <li>＄{title}</li>
     </c:forEach>
 </ul>
-
+<b>Current Rank</b> : ＄{athlete.rank}
 </body>
 </html>

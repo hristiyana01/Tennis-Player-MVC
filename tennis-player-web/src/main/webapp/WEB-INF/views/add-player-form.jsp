@@ -33,6 +33,8 @@
 <%--    </form>--%>
 <%--    Name: <form input path = "lastName"/>--%>
 <%--    <form errors path="lastName" cssClass="error"/>--%>
+        Current Rank *: <form input path = "rank"/>
+        <form errors path= "rank" cssClass="error"/>
     <select name="playerCountry">
         <option>Australia</option>
         <option>France</option>

@@ -23,8 +23,16 @@
 
 <form action = "processPlayerForm" modelAttribute="athlete">
     <br><br>
-    Name: <form input path = "lastName"/>
-    <form errors path="lastName" cssClass="error"/>
+    <form action = "processPlayerForm" modelAttribute="athlete">
+        <br><br>
+        First Name: <form input path = "firstName"/>
+        <br><br>
+        Last Name *: <form input path = "lastName"/>
+        <form errors path= "lastName" cssClass="error"/>
+        <!-- rest of the code -->
+<%--    </form>--%>
+<%--    Name: <form input path = "lastName"/>--%>
+<%--    <form errors path="lastName" cssClass="error"/>--%>
     <select name="playerCountry">
         <option>Australia</option>
         <option>France</option>

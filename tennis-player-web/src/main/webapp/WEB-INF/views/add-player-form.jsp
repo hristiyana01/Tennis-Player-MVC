@@ -10,6 +10,12 @@
 <html>
 <head>
     <title>Add Player</title>
+    <style>
+        .error {
+            color:red;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
 <h2>Player Form</h2>
@@ -17,7 +23,8 @@
 
 <form action = "processPlayerForm" modelAttribute="athlete">
     <br><br>
-    Name: <form input path="lastName"></form>
+    Name: <form input path = "lastName"/>
+    <form errors path="lastName" cssClass="error"/>
     <select name="playerCountry">
         <option>Australia</option>
         <option>France</option>

@@ -36,9 +36,10 @@ public class AthleteController {
     @RequestMapping("/processPlayerForm")
     public static String processForm(@Valid @ModelAttribute("athlete") Athlete myAthlete,
                                      BindingResult result){
-        if(result.hasErrors())
+        if(result.hasErrors()) {
+            System.out.println("Binding result: " + result);
             return "add-player-form";
-        else
+        } else
         return "player-confirmation";
     }
 }

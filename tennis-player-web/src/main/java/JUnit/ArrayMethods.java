@@ -1,12 +1,17 @@
 package JUnit;
 
 public class ArrayMethods {
-    int findIndex(int[] array, int number) {
-        //...
+    public int findIndex(int[] array, int number) {
+        int index = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] == number) {
+                index = array[i];
+            } else continue;
+        }
         return index;
     }
 
-    boolean searchForNumber(int[] array, int numberToSearchFor) {
+    public boolean searchForNumber(int[] array, int numberToSearchFor) {
         boolean found = false;
         //...
         return found;

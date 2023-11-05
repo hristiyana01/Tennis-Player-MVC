@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1d174a9-8b6d-4041-9682-9e47ab0337bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tennis-player-web/src/test/java/ArrayMethodsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tennis-player-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tennis-player-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tennis-player-web/src/main/java/JUnit/ArrayMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/tennis-player-web/src/main/java/JUnit/ArrayMethods.java" afterDir="false" />
-    </list>
+    <list default="true" id="d1d174a9-8b6d-4041-9682-9e47ab0337bb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +68,7 @@
       <updated>1698741579851</updated>
       <workItem from="1698741581317" duration="5130000" />
       <workItem from="1698813996251" duration="4097000" />
-      <workItem from="1698900754602" duration="988000" />
+      <workItem from="1698900754602" duration="1153000" />
     </task>
     <servers />
   </component>

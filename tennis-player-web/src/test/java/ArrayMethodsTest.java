@@ -1,8 +1,7 @@
 import JUnit.ArrayMethods;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class    ArrayMethodsTest {
 @Test
@@ -22,11 +21,42 @@ public class    ArrayMethodsTest {
 @Test
     public void findIndexTest_numberInArray() {
     ArrayMethods arrayMethods = new ArrayMethods();
-    assertEquals(-1, arrayMethods.findIndex(new int[]{8,4,5}, 1));
+    assertEquals(-1, arrayMethods.findIndex(new int[]{8,4,5}, 1), "The findIndex " +
+            "method finds the index of a given number.");
 }
     @Test
     public void testFindIndex_emptyArray() {
         ArrayMethods arrayMethods = new ArrayMethods();
         assertEquals(-1, arrayMethods.findIndex(new int[]{}, 1));
+    }
+    @Test
+    void testAssertBoolean() {
+        Boolean condition = true;
+        assertEquals(true,true);
+        assertTrue(condition);
+    }
+    @Test
+    void testAssertString() {
+        String str = null;
+        assertEquals(null, str);
+        assertNull(str);
+    }
+    @Test
+    public void testSortArray() {
+        fail("unimplemented method");
+    }
+    @Test
+    public void testFindIndex_indexOutOfBound() {
+    ArrayMethods arrayMethods = new ArrayMethods();
+    assertThrows(ArrayIndexOutOfBoundsException.class, () -> arrayMethods.printArray(new int[] {1,8,5}, 3));
+    }
+    @Test
+    public void testFindIndex() {
+    ArrayMethods arrayMethods = new ArrayMethods();
+    assertAll(
+            () -> assertEquals(1, arrayMethods.findIndex(new int[] {8,4,5}, 4)),
+            () -> assertEquals(-1, arrayMethods.findIndex(new int[] {8,4,5}, 1)),
+            () -> assertEquals(-1, arrayMethods.findIndex(new int[] {}, 1))
+    );
     }
 }

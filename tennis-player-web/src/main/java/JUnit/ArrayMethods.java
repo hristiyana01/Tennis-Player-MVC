@@ -16,4 +16,7 @@ public class ArrayMethods {
         //...
         return found;
     }
+    public void printArray(int[] array, int index) {
+        System.out.println(array[index]);
+    }
 }

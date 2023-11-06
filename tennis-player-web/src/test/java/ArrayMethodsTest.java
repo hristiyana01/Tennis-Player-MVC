@@ -1,5 +1,5 @@
 import JUnit.ArrayMethods;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -42,6 +42,7 @@ public class    ArrayMethodsTest {
         assertNull(str);
     }
     @Test
+    @Disabled
     public void testSortArray() {
         fail("unimplemented method");
     }
@@ -58,5 +59,24 @@ public class    ArrayMethodsTest {
             () -> assertEquals(-1, arrayMethods.findIndex(new int[] {8,4,5}, 1)),
             () -> assertEquals(-1, arrayMethods.findIndex(new int[] {}, 1))
     );
+    }
+    @BeforeEach
+    void init() {
+    //initializing the object
+        ArrayMethods arrayMethods;
+        System.out.println("Initializing before test.");
+        arrayMethods = new ArrayMethods();
+    }
+    @AfterEach
+    void afterEachTest(){
+        System.out.println("Clean up after test");
+    }
+    @BeforeAll
+    static void beforeAllTests() {
+        System.out.println("Run this code before all tests");
+    }
+    @AfterAll
+    static void afterAllTests() {
+        System.out.println("Run this code after all tests");
     }
 }

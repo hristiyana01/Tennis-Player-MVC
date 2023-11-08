@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/tennis-player-web/src/test/java/StudentServiceMockitoAnnotationsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tennis-player-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tennis-player-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tennis-player-web/src/test/java/StudentServiceMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tennis-player-web/src/test/java/StudentServiceMockTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,13 +1,19 @@
 import JUnit.MockingStubbing.StudentDao;
 import JUnit.MockingStubbing.StudentService;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 public class StudentServiceMockTest {
-    StudentDao studentDaoMock = mock(StudentDao.class);
+//    @Mock
+//            StudentDao studentDaoMock;
+//    @InjectMocks
+//    StudentService service;
+//   // StudentDao studentDaoMock = mock(StudentDao.class);
     @Test
     void testfindTotal() {
         StudentDao studentDaoMock = mock(StudentDao.class);

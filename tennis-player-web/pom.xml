@@ -99,11 +99,6 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.10.0</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
 </project>

@@ -105,7 +105,6 @@
             <version>2.10.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
@@ -114,6 +113,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>3.1.3</version>
         </dependency>

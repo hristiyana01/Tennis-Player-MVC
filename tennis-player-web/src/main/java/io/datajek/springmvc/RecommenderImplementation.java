@@ -1,3 +1,4 @@
+package io.datajek.springmvc;
 
 import JUnit.Filter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class RecommenderImplementation {
 
-    //Filter is a dependency of RecommenderImplementation
+    //Filter is a dependency of io.datajek.springmvc.RecommenderImplementation
     @Autowired
     private Filter filter;
 

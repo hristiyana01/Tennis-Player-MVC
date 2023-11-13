@@ -13,7 +13,7 @@
 //        ApplicationContext appContext = SpringApplication.run(MovieRecommenderSystemApplication.class, args);
 //
 //        //use ApplicationContext to find which filter is being used
-//        RecommenderImplementation recommender = appContext.getBean(RecommenderImplementation.class);
+//        io.datajek.springmvc.RecommenderImplementation recommender = appContext.getBean(io.datajek.springmvc.RecommenderImplementation.class);
 //
 //        //call method to get recommendations
 //        String[] result = recommender.recommendMovies("Finding Dory");

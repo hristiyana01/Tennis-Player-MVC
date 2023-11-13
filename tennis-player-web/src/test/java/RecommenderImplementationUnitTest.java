@@ -1,3 +1,6 @@
+import io.datajek.springmvc.CollaborativeFilter;
+import io.datajek.springmvc.ContentBasedFilter;
+import io.datajek.springmvc.RecommenderImplementation;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

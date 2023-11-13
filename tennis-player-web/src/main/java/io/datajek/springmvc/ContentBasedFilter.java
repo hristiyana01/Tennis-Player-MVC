@@ -1,3 +1,5 @@
+package io.datajek.springmvc;
+
 import org.springframework.stereotype.Component;
 
 
